@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_local_bar"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon"
+        tools:text="@tools:sample/lorem"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/icon"
+        tools:lines="3"
+        tools:text="@tools:sample/lorem/random"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/icon"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_location"
+        android:gravity="center_vertical"
+        android:textColor="#888"
+        tools:text="@tools:sample/lorem"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/address"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/address"
+        android:gravity="end"
+        android:textColor="@color/colorAccent"
+        tools:text="@tools:sample/lorem"/>
+
+</RelativeLayout>
